@@ -7,6 +7,8 @@ Simple wrapper for EZTV that enables you to search for shows, and pull up show i
 
 Changelog (last 24 months)
 =============
+*August 2020*
+- Formatting in README.md and python3 compatability [GrbavaCigla](https://github.com/GrbavaCigla)
 
 *February 2017*:
 - When pulling up shows by name, look for an exact match before performing a prefix search to find a best match.
