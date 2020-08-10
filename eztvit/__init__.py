@@ -12,7 +12,7 @@ import bs4
 import json
 import re
 import collections
-import urlparse
+from urllib.parse import urlparse
 import urllib3
 import hashlib
 import urllib3.contrib.pyopenssl

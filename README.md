@@ -44,33 +44,29 @@ Changelog (last 24 months)
     python setup.py sdist upload
 
 # Usage 
-
-    $ python
-    Python 2.7.6 (default, Mar 22 2014, 22:59:56) 
-    [GCC 4.8.2] on linux2
-    Type "help", "copyright", "credits" or "license" for more information.
-    >>> import eztvit, pprint
-    >>> eztvit.EztvIt().get_shows().values()[0:5]
-    [u'24', u'30 Rock', u'90210', u'According to Jim', u'The Amazing Race']
-    >>> pprint.pprint(eztvit.EztvIt().get_episodes('Game of Thrones'))
-    {
-        1: {
-            1: [
-                {'download':
-                    {
-                        'magnet': 'magnet:?xt=urn:btih:BMUWPATF433OE...',
-                        'torrent': 'http://...'
-                    },
-                    'release': u'Game of Thrones S01E01 720p HDTV x264-CTU',
-                    'size_mb': 1495
+```python
+>>> import eztvit, pprint
+>>> eztvit.EztvIt().get_shows().values()[0:5]
+[u'24', u'30 Rock', u'90210', u'According to Jim', u'The Amazing Race']
+>>> pprint.pprint(eztvit.EztvIt().get_episodes('Game of Thrones'))
+{
+    1: {
+        1: [
+            {'download':
+                {
+                    'magnet': 'magnet:?xt=urn:btih:BMUWPATF433OE...',
+                    'torrent': 'http://...'
                 },
-                ...
-            ],
+                'release': u'Game of Thrones S01E01 720p HDTV x264-CTU',
+                'size_mb': 1495
+            },
             ...
-        }
+        ],
         ...
     }
-
+    ...
+}
+```
 ## Tests
 
 The code ships with tests and some static HTML output to run against.
